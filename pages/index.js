@@ -17,6 +17,7 @@ import web4 from "../public/web4.png";
 import web5 from "../public/web5.png";
 import web6 from "../public/web6.png";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -46,6 +47,7 @@ export default function Home() {
                   className="bg-teal-600 text-white px-4 py-2 ml-8 rounded-md"
                   href="#"
                 >
+                  {/* <Link to="/">Resume</Link> */}
                   Resume
                 </a>
               </li>
@@ -65,7 +67,7 @@ export default function Home() {
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
             <AiFillTwitterCircle />
-            <AiFillLinkedin />
+            <AiFillLinkedin onClick={() => {}} />
             <AiFillYoutube />
           </div>
           <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
@@ -129,7 +131,9 @@ export default function Home() {
                 width={100}
                 height={100}
               />
-              <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">Consulting</h3>
+              <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">
+                Consulting
+              </h3>
               <p className="py-2 dark:text-gray-200">
                 Are you interested in feedback for your current project? I can
                 give you tips and tricks to level it up.
